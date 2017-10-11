@@ -23,7 +23,7 @@ fi
 echo "Running test: $srcpath"
 echo "------------------"
 echo "Building"
-../Odin/odin build "$srcpath" -collection=zext=lib
+../Odin/odin build "$srcpath" -collection=zext-libs=lib -collection=zext=../zext/lib
 echo "Running"
 $exepath
 rm $exepath
